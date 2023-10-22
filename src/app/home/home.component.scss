@@ -1,8 +1,24 @@
-#img-container {
-    width: 100vw;
-    height: 100vh;
-    img {
-        width: auto;
-        height: 50vh;
+
+
+/* Define a CSS class to make the image cover the entire screen */
+
+.home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .img-container {
+        // border: 10px double rgb(116, 141, 113);
+        width: 99vw;
+        height: 95vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            position: relative;
+            width: 100%;
+            height: 95%;
+            object-fit: contain; /* This ensures the image maintains its aspect ratio and covers the entire container */
+        }
     }
 }

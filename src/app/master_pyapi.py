@@ -109,7 +109,9 @@ class GetSubDirs(Resource):
 class GetRandomImage(Resource):
     @staticmethod
     def get():
-        index = random.randint(0, len(os.listdir(rand_dir)))
+        index = random.randint(0, len(os.listdir(rand_dir)) - 1)
+        logger.debug("in api")
+        logger.debug(f"index: {index}")
         try:
             return send_from_directory(rand_dir, os.listdir(rand_dir)[index])
         except FileNotFoundError as e:

@@ -11,15 +11,18 @@ export class ImgService {
   public imgData$: Observable<Blob | null> = this.imgDataSubject.asObservable();
 
 
-  constructor(private pyapi: PyapiService) { }
+  constructor(private pyapi: PyapiService) { 
+    this.setImg();
+  }
 
   setImg(): void {
+    console.log("img.service setImg");
     this.pyapi.getImg().subscribe(
       img => {
         this.imgDataSubject.next(img);
       },
       error => {
-        console.error("ERROR setting image");
+        return error;
       }
     );
   }
