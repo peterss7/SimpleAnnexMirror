@@ -8,13 +8,13 @@ import { map } from 'rxjs';
 })
 export class PyapiService {
 
-  public baseUrl: string = "http://192.168.86.36:5500/api/rnd-img";
+  public baseUrl: string = "http://192.168.86.26:5500/api/rnd-img";
 
   constructor(private http: HttpClient){}
 
   getImg(): Observable<Blob>{
     console.log("dfgdfgfdg");
-    
+
     return this.http.get(this.baseUrl, {responseType: 'arraybuffer'}).pipe(
       map((data: ArrayBuffer) => new Blob([data], { type: 'image/png'}))
     )};
