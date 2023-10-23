@@ -1,27 +1,7 @@
 # NordlysetsElskerinde
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+This repo contains a python API (which has methods for all of my other projects as well). In this program, it runs on my pc and serves images to an Angular application which also runs on my pc. The application is very simple so far: it just displays a random picture from a folder. The photos are all of my family. The webpage is picked up by my Raspberry Pi powered Magic Mirror, on which there is a script to tune the browser Chromium to my angular app on boot. Attached is a picture of the final product at this point in time. My roommate and I can add images to the folder from our cellphones, and they are then instantly added to the rotation.
 
-## Development server
+![21-nordlysets-elskerinde_1](https://github.com/peterss7/SimpleAnnexMirror/assets/23639065/e1c668bc-671a-4705-9f27-f37dc1ac47d6)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
